@@ -10,6 +10,12 @@ using namespace std;
 #include "monster.h"
 
 int main(int argc, const char * argv[]) {
- 
-    return 0;
+    monster *p;
+    
+    monster m1("Tan",20,1);
+    monster m2("Fang"),m4("Pang",30);
+    monster x[5]={{"Jojo",5},{"Gigi",10,20}};
+    p=new monster("Lulu",10,50);
+    delete p;//destructor p
+    return 0;//destructor x,m4,m2,m1
 }
